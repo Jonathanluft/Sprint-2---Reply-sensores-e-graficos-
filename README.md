@@ -50,11 +50,15 @@ Nessa primeira etapa, focamos na construção de um algoritmo de simulação de 
 
 **Sensores:**
 
-  -	***DHT22:*** Armazenamento (S3) em nuvem e governança e controle de acesso sobre o armazenament (Lake Formation).<br>
-    - ****teste****
-  -	***MPU6050*** Através de replicação de dados do RDS e Lambda.<br>
-  -	***BOTÃO:*** Ter um repositório sem impactar em ambiente produtivo (RDS) e também possibilitando uma futura fonte de dados para construção de Dashboards, além de servir de fonte de dados para a IA.<br>
-  -	***Funcionamento:*** .<br>
+  -	***DHT22:*** .<br>
+    - ****Função****: Responsável por medir temperatura (°C) e umidade relativa do ar (%).<br>
+    - ****Funcionamento****: No código, os valores são simulados usando a função random() para gerar dados entre: Temperatura: 20,0 °C a 90,0 °C e Umidade: 9,0% a 90,0%.<br>
+  -	***MPU6050*** .<br>
+    - ****Função****: Usado para medir aceleração e rotação, mas nesse caso foi adaptado para medir a vibração do maquinário em Hz.<br>
+    - ****Funcionamento****: A vibração (Hz) também é simulada entre 20,0 Hz e 80,0 Hz usando random().<br>
+  -	***BOTÃO:*** <br>
+    - ****Função****: Simula um botão conectado ao pino D12, usando INPUT_PULLUP.<br>
+    - ****Funcionamento****: Como não tinhamos um sensor de infravermelho para poder detectar a passagem de produtos e assim calcular de uma melhor forma a quantidade produzida, elaboramos a variável valorBotao parea percorrer ciclicamente os valores de 0 a 3, representando a seleção de um entre quatro produtos.<br>
 
 
 ## 🔧 Funcionamento
