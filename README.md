@@ -83,7 +83,7 @@ Esses dados são impressos no monitor serial no formato CSV, com o seguinte cabe
 
 **Nota:** Os sensores reais estão conectados, mas os valores são gerados aleatoriamente para simulação.
 
-###Lógica do Botão###
+### Lógica do Botão
 - O botão está conectado com INPUT_PULLUP.<br>
 - Cada ciclo de leitura incrementa o valor valorBotao de 0 a 3, reiniciando após 3.<br>
 - Isso simula o avanço de um estado de produção ou operação.<br>
