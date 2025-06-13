@@ -160,7 +160,7 @@ Importância prática: identificar leituras fora do normal pode indicar falhas i
 
 Neste caso: as variações são limitadas e os outliers pouco expressivos, devido à uniformidade dos dados simulados.
 
-![Screenshot 2025-06-13 002043](https://github.com/user-attachments/assets/0e7ae4bd-bd29-438e-a0fa-de6ee842c186)
+![Screenshot 2025-06-13 002731](https://github.com/user-attachments/assets/1e2fc8eb-4a79-454c-a23a-a4da0e1cba72)
 
 6. Regressão Linear - Temperatura x Umidade e Temperatura x Vibração
 Dois gráficos com regplot foram criados para avaliar possíveis correlações lineares:
@@ -171,7 +171,8 @@ Temperatura x Vibração: novamente, nenhuma correlação significativa.
 
 ![Screenshot 2025-06-13 002100](https://github.com/user-attachments/assets/4c746880-a6f5-4403-9f4b-1c4a6a163b18)
 
-![Screenshot 2025-06-13 002113](https://github.com/user-attachments/assets/481f0f6c-7d08-4560-a3bc-7cbfcaa196ae)
+![Screenshot 2025-06-13 002656](https://github.com/user-attachments/assets/0f589027-69a3-4ecf-909a-2c6f19f7af8c)
+
 
 Nota crítica: com dados reais, esperaria-se uma correlação positiva entre temperatura e vibração, ou até mesmo um comportamento de umidade relacionado à eficiência térmica do ambiente.
 ## 👨‍🎓 Divisão de responsabilidades:
