@@ -169,12 +169,12 @@ Temperatura x Umidade: tendência levemente negativa, mas estatisticamente irrel
 
 Temperatura x Vibração: novamente, nenhuma correlação significativa.
 
+Nota crítica: com dados reais, esperaria-se uma correlação positiva entre temperatura e vibração, ou até mesmo um comportamento de umidade relacionado à eficiência térmica do ambiente.
+
 ![Screenshot 2025-06-13 002100](https://github.com/user-attachments/assets/4c746880-a6f5-4403-9f4b-1c4a6a163b18)
 
 ![Screenshot 2025-06-13 002656](https://github.com/user-attachments/assets/0f589027-69a3-4ecf-909a-2c6f19f7af8c)
 
-
-Nota crítica: com dados reais, esperaria-se uma correlação positiva entre temperatura e vibração, ou até mesmo um comportamento de umidade relacionado à eficiência térmica do ambiente.
 ## 👨‍🎓 Divisão de responsabilidades:
 - Desenvolvimento do algoritmo de análise gráfica: <a href="https://www.linkedin.com/company/inova-fusca">Jonathan Willian Luft </a> e <a href="https://www.linkedin.com/company/inova-fusca">Fatima Candal</a>
 - Testes de Sensores: <a href="https://www.linkedin.com/company/inova-fusca">Gabriel Viel </a>, <a href="https://www.linkedin.com/company/inova-fusca"> Matheus Alboredo Soares</a>,  e <a href="https://www.linkedin.com/company/inova-fusca">Guilherme  Campos Hermanowski </a>
