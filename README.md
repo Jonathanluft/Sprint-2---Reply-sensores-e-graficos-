@@ -114,7 +114,7 @@ Ou seja, embora os dados representem medições sensoriais típicas de ambientes
 
 Etapas da Análise
 1. Importação e Visualização Inicial dos Dados
-Os pacotes pandas, matplotlib.pyplot, seaborn e numpy são importados para lidar com análise de dados e visualizações. Em seguida, o arquivo dados_sensores.csv é carregado em um DataFrame, com colunas como:
+Os pacotes pandas, matplotlib.pyplot, seaborn são importados para lidar com análise de dados e visualizações. Em seguida, o arquivo dados_sensores.csv é carregado em um DataFrame, com colunas como:
 
 Timestamp (tempo em segundos)
 
@@ -133,12 +133,16 @@ O que é observado: variações caóticas e inconclusivas, típicas de dados ale
 
 Objetivo: ilustrar como seria monitorado o comportamento térmico real com visualizações temporais.
 
+![Screenshot 2025-06-13 002013](https://github.com/user-attachments/assets/cec2a364-72d6-4526-b041-0a8342cd7dde)
+
 3. Gráfico de Dispersão - Vibração x Tempo
 Aqui se busca entender como a vibração evolui ao longo do tempo.
 
 Hipótese prática: a vibração tenderia a aumentar com o tempo, possivelmente acompanhando o aumento de temperatura ou desgaste mecânico.
 
 Resultado com dados simulados: distribuição de pontos aleatória, sem tendência clara.
+
+![Screenshot 2025-06-13 002019](https://github.com/user-attachments/assets/af806141-0512-4667-b8c6-f84031550852)
 
 4. Gráfico de Dispersão - Vibração x Temperatura
 Este gráfico visa identificar se há uma correlação entre o aquecimento do sistema e sua vibração.
@@ -147,6 +151,8 @@ Esperado na prática: um padrão onde maior temperatura implica em mais vibraç�
 
 Com dados simulados: não há acúmulo progressivo ou relação visível — os dados são dispersos e não estruturados.
 
+![Screenshot 2025-06-13 002033](https://github.com/user-attachments/assets/6369dc9f-31e6-4e01-94ac-b89d3dc6dfbc)
+
 5. Boxplot - Temperatura, Umidade e Vibração
 Visualização importante para avaliar distribuições, medianas e outliers de cada sensor.
 
@@ -154,12 +160,18 @@ Importância prática: identificar leituras fora do normal pode indicar falhas i
 
 Neste caso: as variações são limitadas e os outliers pouco expressivos, devido à uniformidade dos dados simulados.
 
+![Screenshot 2025-06-13 002043](https://github.com/user-attachments/assets/0e7ae4bd-bd29-438e-a0fa-de6ee842c186)
+
 6. Regressão Linear - Temperatura x Umidade e Temperatura x Vibração
 Dois gráficos com regplot foram criados para avaliar possíveis correlações lineares:
 
 Temperatura x Umidade: tendência levemente negativa, mas estatisticamente irrelevante.
 
 Temperatura x Vibração: novamente, nenhuma correlação significativa.
+
+![Screenshot 2025-06-13 002100](https://github.com/user-attachments/assets/4c746880-a6f5-4403-9f4b-1c4a6a163b18)
+
+![Screenshot 2025-06-13 002113](https://github.com/user-attachments/assets/481f0f6c-7d08-4560-a3bc-7cbfcaa196ae)
 
 Nota crítica: com dados reais, esperaria-se uma correlação positiva entre temperatura e vibração, ou até mesmo um comportamento de umidade relacionado à eficiência térmica do ambiente.
 ## 👨‍🎓 Divisão de responsabilidades:
