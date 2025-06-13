@@ -90,7 +90,7 @@ Esses dados são impressos no monitor serial no formato CSV, com o seguinte cabe
 - Cada ciclo de leitura incrementa o valor valorBotao de 0 a 3, reiniciando após 3.<br>
 - Isso simula o avanço de um estado de produção ou operação.<br>
 
-Aqui esta uma imagens para ilustrar a explicação de como funcionou a simulação e demonstrar as conexões de cada sensor ao controlador:
+Aqui esta uma imagens para ilustrar a explicação de como funcionou a simulação e demonstrar as conexões de cada sensor ao ESP32:
 
 ![image](https://github.com/user-attachments/assets/6dd69b53-680b-40d9-94e6-ad7ee1007077)
 
