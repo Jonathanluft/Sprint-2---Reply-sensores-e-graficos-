@@ -65,6 +65,8 @@ Nessa primeira etapa, focamos na construção de um algoritmo de simulação de 
 
 Este projeto implementa um sistema de monitoramento utilizando a placa ESP32, um sensor de temperatura e umidade DHT22, um sensor inercial MPU6050 e um botão físico. Os dados são simulados para testes em ambiente virtual (Wokwi) e exibidos no formato CSV pelo monitor serial, possibilitando futura exportação ou análise.
 
+### Funcionamento dos sensores:
+
 O sistema realiza a leitura simulada de três sensores a cada 5 segundos:
 
 - ***Temperatura:*** Valor aleatório entre 20.0 e 90.0 °C
