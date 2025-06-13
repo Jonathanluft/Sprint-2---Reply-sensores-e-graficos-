@@ -94,7 +94,8 @@ Aqui esta uma imagens para ilustrar a explicação de como funcionou a simulaç�
 
 ![image](https://github.com/user-attachments/assets/6dd69b53-680b-40d9-94e6-ad7ee1007077)
 
-
+Assim, os dados exibidos no monitor serial no canto inferior esquerdo da figura são copiados para um outro arquivo para serem transformados manualmente em um csv.
+Importante frisar que essa transformação não pode ser automatizada devido a limitações dentro da plataformna do Wokwi, que por ser um ambiente de simulação, não permite salvar esses dados em arquivos.
 
 
 ## 👨‍🎓 Divisão de responsabilidades:
