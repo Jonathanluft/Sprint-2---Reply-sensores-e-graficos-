@@ -97,6 +97,8 @@ Aqui esta uma imagens para ilustrar a explicação de como funcionou a simulaç�
 Assim, os dados exibidos no monitor serial no canto inferior esquerdo da figura são copiados para um outro arquivo para serem transformados manualmente em um csv.
 Importante frisar que essa transformação não pode ser automatizada devido a limitações dentro da plataformna do Wokwi, que por ser um ambiente de simulação, não permite salvar esses dados em arquivos.
 
+Para mais detalhes, voê pode acessar o projeto diretamente da plataforma da wokwi através do link abaixo:
+- <a href="https://wokwi.com/projects/433610122638702593"</a>
 
 ## 👨‍🎓 Divisão de responsabilidades:
 - Desenvolvimento do algoritmo de análise gráfica: <a href="https://www.linkedin.com/company/inova-fusca">Jonathan Willian Luft </a> e <a href="https://www.linkedin.com/company/inova-fusca">Fatima Candal</a>
