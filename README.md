@@ -99,7 +99,69 @@ Importante frisar que essa transformação não pode ser automatizada devido a l
 
 Para mais detalhes, voê pode acessar o projeto diretamente da plataforma da wokwi através do link abaixo:
 - https://wokwi.com/projects/433610122638702593
+  
+### Análise Exploratória de Dados Simulados de Sensores Industriais
 
+Contexto Geral
+Este projeto tem como objetivo demonstrar a capacidade analítica do grupo frente a dados obtidos por sensores em um ambiente industrial simulado. Apesar dos dados utilizados serem totalmente simulados e com baixa ou nenhuma correlação realista, a estrutura do código busca refletir um cenário prático de monitoramento e análise de sensores como temperatura, umidade e vibração.
+
+Premissas e Limitações
+Logo no início do notebook, é feita uma importante ressalva:
+
+"Devido à aleatoriedade dos dados gerados, não é possível tirar qualquer conclusão significativa dos gráficos, pois todos tendem a se manter neutros, o que na prática não aconteceria."
+
+Ou seja, embora os dados representem medições sensoriais típicas de ambientes industriais, sua natureza randômica impede que se tirem inferências reais. Ainda assim, o foco está em demonstrar a capacidade de aplicar ferramentas analíticas sobre esse tipo de dado.
+
+Etapas da Análise
+1. Importação e Visualização Inicial dos Dados
+Os pacotes pandas, matplotlib.pyplot, seaborn e numpy são importados para lidar com análise de dados e visualizações. Em seguida, o arquivo dados_sensores.csv é carregado em um DataFrame, com colunas como:
+
+Timestamp (tempo em segundos)
+
+Temperatura(°C)
+
+Umidade(%)
+
+Vibracao(Hz)
+
+2. Gráfico de Linha - Temperatura ao Longo do Tempo
+O primeiro gráfico mostra a evolução temporal da temperatura do equipamento.
+
+O que se esperaria com dados reais: um aumento gradual da temperatura conforme o equipamento opera.
+
+O que é observado: variações caóticas e inconclusivas, típicas de dados aleatórios.
+
+Objetivo: ilustrar como seria monitorado o comportamento térmico real com visualizações temporais.
+
+3. Gráfico de Dispersão - Vibração x Tempo
+Aqui se busca entender como a vibração evolui ao longo do tempo.
+
+Hipótese prática: a vibração tenderia a aumentar com o tempo, possivelmente acompanhando o aumento de temperatura ou desgaste mecânico.
+
+Resultado com dados simulados: distribuição de pontos aleatória, sem tendência clara.
+
+4. Gráfico de Dispersão - Vibração x Temperatura
+Este gráfico visa identificar se há uma correlação entre o aquecimento do sistema e sua vibração.
+
+Esperado na prática: um padrão onde maior temperatura implica em mais vibração, devido à dilatação de componentes e atrito.
+
+Com dados simulados: não há acúmulo progressivo ou relação visível — os dados são dispersos e não estruturados.
+
+5. Boxplot - Temperatura, Umidade e Vibração
+Visualização importante para avaliar distribuições, medianas e outliers de cada sensor.
+
+Importância prática: identificar leituras fora do normal pode indicar falhas iminentes em um sistema real.
+
+Neste caso: as variações são limitadas e os outliers pouco expressivos, devido à uniformidade dos dados simulados.
+
+6. Regressão Linear - Temperatura x Umidade e Temperatura x Vibração
+Dois gráficos com regplot foram criados para avaliar possíveis correlações lineares:
+
+Temperatura x Umidade: tendência levemente negativa, mas estatisticamente irrelevante.
+
+Temperatura x Vibração: novamente, nenhuma correlação significativa.
+
+Nota crítica: com dados reais, esperaria-se uma correlação positiva entre temperatura e vibração, ou até mesmo um comportamento de umidade relacionado à eficiência térmica do ambiente.
 ## 👨‍🎓 Divisão de responsabilidades:
 - Desenvolvimento do algoritmo de análise gráfica: <a href="https://www.linkedin.com/company/inova-fusca">Jonathan Willian Luft </a> e <a href="https://www.linkedin.com/company/inova-fusca">Fatima Candal</a>
 - Testes de Sensores: <a href="https://www.linkedin.com/company/inova-fusca">Gabriel Viel </a>, <a href="https://www.linkedin.com/company/inova-fusca"> Matheus Alboredo Soares</a>,  e <a href="https://www.linkedin.com/company/inova-fusca">Guilherme  Campos Hermanowski </a>
