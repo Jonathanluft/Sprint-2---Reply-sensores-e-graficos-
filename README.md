@@ -62,7 +62,31 @@ Nessa primeira etapa, focamos na construção de um algoritmo de simulação de 
 
 
 ## 🔧 Funcionamento
-Preencher
+
+Este projeto implementa um sistema de monitoramento utilizando a placa ESP32, um sensor de temperatura e umidade DHT22, um sensor inercial MPU6050 e um botão físico. Os dados são simulados para testes em ambiente virtual (Wokwi) e exibidos no formato CSV pelo monitor serial, possibilitando futura exportação ou análise.
+
+O sistema realiza a leitura simulada de três sensores a cada 5 segundos:
+
+- ***Temperatura:*** Valor aleatório entre 20.0 e 90.0 °C
+
+- ***Umidade:*** Valor aleatório entre 9.0 e 90.0 %
+
+- ***Vibração:*** Valor entre 20.0 e 80.0 Hz
+
+- ***Produtos:*** Contador cíclico de 0 a 3 (simulando estados de operação)
+
+Esses dados são impressos no monitor serial no formato CSV, com o seguinte cabeçalho:
+
+*Timestamp,Temperatura(°C),Umidade(%),Vibracao(Hz),Produtos*
+
+*Exemplo de saída:* 12,34.2,65.1,52.4,1
+
+**Nota:** Os sensores reais estão conectados, mas os valores são gerados aleatoriamente para simulação.
+
+###Lógica do Botão###
+- O botão está conectado com INPUT_PULLUP.<br>
+- Cada ciclo de leitura incrementa o valor valorBotao de 0 a 3, reiniciando após 3.<br>
+- Isso simula o avanço de um estado de produção ou operação.<br>
 
 ## 👨‍🎓 Divisão de responsabilidades:
 - Desenvolvimento do algoritmo de análise gráfica: <a href="https://www.linkedin.com/company/inova-fusca">Jonathan Willian Luft </a> e <a href="https://www.linkedin.com/company/inova-fusca">Fatima Candal</a>
