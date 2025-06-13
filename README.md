@@ -51,6 +51,7 @@ Nessa primeira etapa, focamos na construção de um algoritmo de simulação de 
 **Sensores:**
 
   -	***DHT22:*** Armazenamento (S3) em nuvem e governança e controle de acesso sobre o armazenament (Lake Formation).<br>
+    - ****teste****
   -	***MPU6050*** Através de replicação de dados do RDS e Lambda.<br>
   -	***BOTÃO:*** Ter um repositório sem impactar em ambiente produtivo (RDS) e também possibilitando uma futura fonte de dados para construção de Dashboards, além de servir de fonte de dados para a IA.<br>
   -	***Funcionamento:*** .<br>
